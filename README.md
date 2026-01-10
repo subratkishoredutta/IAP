@@ -32,4 +32,14 @@
         <li>We successfully bypass multiple state-of-the-art adversarial patch defense methods</li>
       </ul>
 
-Official Code and instructions for our paper IAP. The code will be released soon.
+# Project Name
+
+## ⚙️ Setup
+
+### 1️⃣ Create Environment
+
+```bash
+conda create -n iap python=3.10 -y
+conda activate iap
+pip install -r requirements.txt
+
