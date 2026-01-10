@@ -42,4 +42,39 @@
 conda create -n iap python=3.10 -y
 conda activate iap
 pip install -r requirements.txt
+```
 
+### Directory Structure
+
+```
+IAP/
+├── imagenet1000main/
+│   ├── 0/
+|   |   ├── 0.jpeg
+|   |   ├── 1.jpeg
+|   |   ├── ...
+│   ├── 1/
+│   └── ...
+├── src/
+│   ├── IAP.py
+│   ├── utils.py
+│   └── pytorch_grad_cam/
+├── assets/
+|   ├── flowchart.jpg
+├── README.md
+├── LICENSE
+└── requirements.txt
+
+
+```
+### Citation
+
+```
+@inproceedings{dutta2025iap,
+  title={IAP: Invisible Adversarial Patch Attack through Perceptibility-Aware Localization and Perturbation Optimization},
+  author={Dutta, Subrat Kishore and Zhang, Xiao},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={14766--14775},
+  year={2025}
+}
+```
