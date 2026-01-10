@@ -46,7 +46,7 @@ pip install -r requirements.txt
 
 ### Directory Structure
 
-The repository is organized as follows.  
+The repository is organized as follows. We utilize 5 images per ImageNet class and pick one at random. 
 To compute attention maps using **Grad-CAM**, we use the official PyTorch implementation provided by  
 [Jacob Gildenblat’s pytorch-grad-cam repository](https://github.com/jacobgil/pytorch-grad-cam/tree/master/pytorch_grad_cam).
 
@@ -65,9 +65,24 @@ IAP/
 │   └── pytorch_grad_cam/
 ├── assets/
 │   └── flowchart.jpg
+├── results/
+|   ├──data
+|   ├──temp
+|   ├──pur
+|   ├──imagetem
+|   ├──delta
 ├── README.md
 ├── LICENSE
 └── requirements.txt
+```
+### Running IAP
+
+To run the attack, use the following code:
+
+```
+python src/IAP.py
+```
+The resultant adversarial sample, along with other details, will be stored at "results/".
 
 ### Citation
 
