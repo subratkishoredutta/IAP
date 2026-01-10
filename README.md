@@ -36,7 +36,7 @@
 
 ## ⚙️ Setup
 
-### 1️⃣ Create Environment
+### Create Environment
 
 ```bash
 conda create -n iap python=3.10 -y
@@ -46,13 +46,17 @@ pip install -r requirements.txt
 
 ### Directory Structure
 
-```
+The repository is organized as follows.  
+To compute attention maps using **Grad-CAM**, we use the official PyTorch implementation provided by  
+[Jacob Gildenblat’s pytorch-grad-cam repository](https://github.com/jacobgil/pytorch-grad-cam/tree/master/pytorch_grad_cam).
+
+```text
 IAP/
 ├── imagenet1000main/
 │   ├── 0/
-|   |   ├── 0.jpeg
-|   |   ├── 1.jpeg
-|   |   ├── ...
+│   │   ├── 0.jpeg
+│   │   ├── 1.jpeg
+│   │   └── ...
 │   ├── 1/
 │   └── ...
 ├── src/
@@ -60,13 +64,11 @@ IAP/
 │   ├── utils.py
 │   └── pytorch_grad_cam/
 ├── assets/
-|   ├── flowchart.jpg
+│   └── flowchart.jpg
 ├── README.md
 ├── LICENSE
 └── requirements.txt
 
-
-```
 ### Citation
 
 ```
