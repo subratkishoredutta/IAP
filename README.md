@@ -53,7 +53,7 @@ To compute attention maps using **Grad-CAM**, we use the official PyTorch implem
 ```text
 IAP/
 ├── imagenet1000main/
-│   ├── 0/
+│   ├── 0/ 
 │   │   ├── 0.jpeg
 │   │   ├── 1.jpeg
 │   │   └── ...
@@ -66,18 +66,18 @@ IAP/
 ├── assets/
 │   └── flowchart.jpg
 ├── results/
-|   ├──data
-|   ├──temp
-|   ├──pur
-|   ├──imagetem
-|   ├──delta
+|   ├──data #contains the per sample attack details
+|   ├──temp #contains the original version of the image at the local level
+|   ├──delta #contains the final perturbed version of the image at the local level 
+|   ├──imagetem #contains the original unperturbed sample
+|   └──pur #contains the final adversarial sample
 ├── README.md
 ├── LICENSE
 └── requirements.txt
 ```
 ### Running IAP
 
-To run the attack, using the default hyperparameters mentioned in the paper, run:
+To run the attack, using the default hyperparameters reported in the paper, run:
 
 ```
 python src/IAP.py
@@ -85,6 +85,7 @@ python src/IAP.py
 The resultant adversarial sample, along with other details, will be stored at "results/".
 
 ### Citation
+If you use this work, please cite:
 
 ```
 @inproceedings{dutta2025iap,
