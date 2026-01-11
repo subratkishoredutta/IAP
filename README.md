@@ -1,5 +1,5 @@
 # IAP: Invisible Adversarial Patch Attack through Perceptibility-Aware Localization and Perturbation Optimization
-<img src="/assets/flowchart.jpg" alt="IAP Teaser" width="800"/>
+<img src="/assets/flowchart.jpg" alt="IAP Teaser" width="850"/>
 
 ## Abstract:
 
