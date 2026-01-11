@@ -130,10 +130,10 @@ with open('../IAP/src/results/data/data_records_toaster.csv', 'w', newline='') a
                 print("\n true class prob",nn.Softmax(dim=1)(pred)[0,class_id].item())
                 success_rate+=1
                 pur = apply_patch(image,delta,x,y)
-                ssim_monitor_patches+=ssim(temp, delta).item()
-                ssim_monitor_images+=ssim(pur, imagetem).item()
-                psnr_monitor_patches+=psnr(temp,delta).item()
-                psnr_monitor_images+=psnr(pur, imagetem).item()
+                ssim_monitor_patches=ssim(temp, delta).item()
+                ssim_monitor_images=ssim(pur, imagetem).item()
+                psnr_monitor_patches=psnr(temp,delta).item()
+                psnr_monitor_images=psnr(pur, imagetem).item()
                 torch.save(imagetem, f"../IAP/src/results/imagetem/imagetem_{target_class}_{class_name}.pt") #../IAP/results/imagetem/
                 torch.save(pur, f"../IAP/src/results/pur/pur_{target_class}_{class_name}.pt")
                 torch.save(delta, f"../IAP/src/results/delta/delta_{target_class}_{class_name}.pt")
