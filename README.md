@@ -6,7 +6,7 @@
 
 🧠 [AIRML Lab](https://air-ml.org/)
 
-📚 Publication: [Arxiv](https://openaccess.thecvf.com/content/ICCV2025/papers/Dutta_IAP_Invisible_Adversarial_Patch_Attack_through_Perceptibility-Aware_Localization_and_Perturbation_ICCV_2025_paper.pdf)
+📚 [Publication](https://openaccess.thecvf.com/content/ICCV2025/papers/Dutta_IAP_Invisible_Adversarial_Patch_Attack_through_Perceptibility-Aware_Localization_and_Perturbation_ICCV_2025_paper.pdf)
 
 ---
 <img src="/assets/flowchart.jpg" alt="IAP Teaser" width="850"/>
