@@ -1,4 +1,12 @@
-# IAP: Invisible Adversarial Patch Attack through Perceptibility-Aware Localization and Perturbation Optimization
+# IAP: Invisible Adversarial Patch Attack through Perceptibility-Aware Localization and Perturbation Optimization.
+
+🧑‍🔬 Authors: Subrat Kishore Dutta, Xiao Zhang
+
+🧠 [AIRML Lab](https://air-ml.org/)
+
+📚 Publication: [Arxiv](https://openaccess.thecvf.com/content/ICCV2025/papers/Dutta_IAP_Invisible_Adversarial_Patch_Attack_through_Perceptibility-Aware_Localization_and_Perturbation_ICCV_2025_paper.pdf)
+
+---
 <img src="/assets/flowchart.jpg" alt="IAP Teaser" width="850"/>
 
 ## Abstract:
@@ -24,6 +32,8 @@
         several state-of-the-art patch defenses ineffective.
 </p>
 
+---
+
 ## Highlights:
 
 <ul>
@@ -32,7 +42,7 @@
         <li>We successfully bypass multiple state-of-the-art adversarial patch defense methods</li>
       </ul>
 
-# Project Name
+---
 
 ## ⚙️ Setup
 
@@ -75,7 +85,10 @@ IAP/
 ├── LICENSE
 └── requirements.txt
 ```
-### Running IAP
+
+---
+
+## 💡 Running IAP
 
 To run the attack, using the default hyperparameters reported in the paper, run:
 
@@ -84,7 +97,7 @@ python src/IAP.py
 ```
 The resultant adversarial sample, along with other details, will be stored at "results/".
 
-### Citation
+## Citation
 If you use this work, please cite:
 
 ```
